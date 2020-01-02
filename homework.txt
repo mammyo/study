@@ -1,0 +1,25 @@
+1. dockerfile 생성
+2. image 빌드
+3. image 테스트 (컨테이너 생성)
+4. docker-compose.yml 파일에 새로운 service (container) 추가 
+	-mongo_repl_setting
+5. docker-compose up
+
+quest) mysql 설치 -> docker -compose.yml 파일 작성
+	- mysql:5.7  -> test_mysql 이미지 빌드
+		-root 패스워드 사용하지 않도로고 설정(-e 옵션 or environment 옵션)
+	- test_mysql 이미지를 docker-compose에서 실행
+
+	Dockerfile,
+		docker build -t test_mysql:latset
+
+	docker-compose.yml
+		version;..
+		service:
+			my_mysql:
+				image: text_mysql
+
+gitjub.com 
+	- 본인 게정에 강사와 공유하는 repository에 commit
+	- dockerfile, docker-compose.yml
+	- by 이번주
