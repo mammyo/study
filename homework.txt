@@ -2,7 +2,6 @@
 2. image 빌드
 3. image 테스트 (컨테이너 생성)
 4. docker-compose.yml 파일에 새로운 service (container) 추가 
-	-mongo_repl_setting
 5. docker-compose up
 
 quest) mysql 설치 -> docker -compose.yml 파일 작성
